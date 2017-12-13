@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Marty Heavey</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -17,10 +17,6 @@ body {font-family: "Lato", sans-serif}
     position: relative;
     top: 40px;
 }
-
-ul {
-  list-style-type: none;
-}
 </style>
 <body>
 
@@ -32,24 +28,23 @@ ul {
 <!--     <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a> -->
     <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Projects</a>
     <a href="#info" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Info</a>
-    <div class="w3-dropdown-hover w3-hide-small">
+<!--     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
         <a href="#" class="w3-bar-item w3-button">Merchandise</a>
         <a href="#" class="w3-bar-item w3-button">Extras</a>
         <a href="#" class="w3-bar-item w3-button">Media</a>
-      </div>
+      </div> -->
     </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+<!--     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a> -->
   </div>
 </div>
 
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large">Marty Heavey</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Marty Heavey</a>
   <a href="#projects" class="w3-bar-item w3-button w3-padding-large">Projects</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">MERCH</a>
+  <a href="#info" class="w3-bar-item w3-button w3-padding-large">Info</a>
 </div>
 
 <!-- Page content -->
@@ -80,11 +75,9 @@ ul {
 
   <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3">Hi! I'm Marty.</h2>
+    <h2>Hi! I'm Marty.</h2>
     <p class="w3-opacity"><i>I am a sophomore at Harvard studying computer science.</i></p>
-    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p class="w3-justify">I was born and raised in the Las Vegas area before going to school on the East Coast. Currently, I am a A.B. candidate in computer science pursuing a secondary in government and a citation in Spanish at Harvard College. In addition, I am a member of the Harvard men's varsity volleyball team. I am interested in politics, and would like to eventually work in the intersection of technology and social good. </p>
     <!-- <div class="w3-row w3-padding-32">
       <div class="w3-third">
         <p>Name</p>
@@ -104,7 +97,7 @@ ul {
   <!-- The Tour Section -->
   <div class="w3-black" id="projects">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">Projects</h2>
+      <h2 class="w3-center">Projects</h2>
       <p class="w3-opacity w3-center"><i>Some things I have worked on.</i></p><br>
 
      <!--  <ul class="w3-ul w3-border w3-white w3-text-grey">
@@ -119,8 +112,9 @@ ul {
           <div class="w3-container w3-white">
             <p><b>Movie for Me</b></p>
             <p class="w3-opacity">Nov 2016 - Present</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+            <p>This is a web application I built originally for my CS50 final project. It's purpose is sorting movies on Netflix. The back-end is in Python (Flask) and the front-end uses JavaScript as well as HTML/CSS. I am currently working on scraping streaming sites and using SQL to store and query movie data.</p>
+            <a href="https://movie4me.herokuapp.com"><button class="w3-button w3-black w3-margin-bottom">Heroku App</button></a>
+            <a href="https://github.com/mheavey18/Movie-for-Me"><button class="w3-button w3-black w3-margin-bottom">GitHub Repo</button></a>
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
@@ -128,8 +122,9 @@ ul {
           <div class="w3-container w3-white">
             <p><b>NBA Schedule Optimizer</b></p>
             <p class="w3-opacity">Nov, Dec 2017</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+            <p>This was a final project for CS182, Artificial Intelligence. I worked on this with Jack Connolly, and we created a way to generate and optimize random, valid NBA schedules by limiting the number of back-to-back games and travel distance. Our method of optimization was using local search, specifically hill climbing and simulated annealing algorithms. This project was done entirely in Python.
+            </p>
+            <a href="https://github.com/mheavey18/nba-optimizer"><button class="w3-button w3-black w3-margin-bottom">GitHub Repo</button></a>
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
@@ -137,8 +132,7 @@ ul {
           <div class="w3-container w3-white">
             <p><b>MiniML</b></p>
             <p class="w3-opacity">Apr, May 2017</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+            <p>This was the implementation of a subset of a function programming language using OCaml. It was my final project for CS51. I implemented both a dynamically scoped environment model and a subsitution model for the subset of the language. Unfortunately, this repo is private on GitHub because most students choose to do a very similar project for the class, but if you reach out I would be happy to talk more about it.</p>
           </div>
         </div>
       </div>
@@ -167,7 +161,7 @@ ul {
 
   <!-- The Contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="info">
-    <h2 class="w3-wide w3-center">Info</h2>
+    <h2 class="w3-center">Info</h2>
     <p class="w3-opacity w3-center"><i>Feel free to check out my links and resume or shoot me an email!</i></p>
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom">
@@ -175,12 +169,10 @@ ul {
 <!--         <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br> -->
         <i class="fa fa-envelope" style="width:30px"> </i> mheavey@college.harvard.edu<br>
       </div>
-      <div class="w3-col m6">
-        <ul class="w3-container w3-center w3-xlarge">
-          <li><a href=https://www.linkedin.com/in/martin-heavey/><i class="fa fa-linkedin w3-hover-opacity"></i></a></li>
-          <li><a href=https://github.com/mheavey18><i class="fa fa-github w3-hover-opacity"></i></a></li>
-          <li><a href=resume.pdf><i class="fa fa-file-pdf-o w3-hover-opacity"></i></a></li>
-        </ul>
+      <div class="w3-col m6 w3-container w3-center w3-large">
+          LinkedIn: <a href=https://www.linkedin.com/in/martin-heavey/><i class="fa fa-linkedin w3-hover-opacity" style="width:30px"></i></a><br>
+          GitHub: <a href=https://github.com/mheavey18><i class="fa fa-github w3-hover-opacity" style="width:30px"></i></a></br>
+          Resume: <a href=static/resume.pdf><i class="fa fa-file-pdf-o w3-hover-opacity" style="width:30px"></i></a><br>
       </div>
 
         <!-- <form action="/action_page.php" target="_blank">
@@ -227,13 +219,14 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+Thanks for visiting!
+ <!--  <i class="fa fa-facebook-official w3-hover-opacity"></i>
   <i class="fa fa-instagram w3-hover-opacity"></i>
   <i class="fa fa-snapchat w3-hover-opacity"></i>
   <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
 </footer>
 
 <script>
